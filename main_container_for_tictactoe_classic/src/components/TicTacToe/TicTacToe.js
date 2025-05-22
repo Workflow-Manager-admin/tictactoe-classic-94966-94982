@@ -209,7 +209,7 @@ const TicTacToe = () => {
   return (
     <div className="tictactoe">
       <h1 className="game-title">Tic Tac Toe</h1>
-      <div className="game-subtitle">Enhanced with multiple board sizes, AI, and analytics</div>
+      <div className="game-subtitle">Play against AI with adjustable difficulty or challenge a friend</div>
       
       {/* Game settings (collapsible) */}
       <div className={`settings-container ${showSettings ? '' : 'settings-closed'}`}>
