@@ -55,7 +55,7 @@ body {
   box-sizing: border-box;
 }
 
-.hero {
+.content-section {
   padding-top: 120px;
   padding-bottom: 64px;
   text-align: center;
@@ -83,7 +83,7 @@ body {
   line-height: 1.5;
   color: var(--text-secondary);
   max-width: 600px;
-  margin-bottom: 16px;
+  margin-bottom: 32px;
 }
 
 .btn {
