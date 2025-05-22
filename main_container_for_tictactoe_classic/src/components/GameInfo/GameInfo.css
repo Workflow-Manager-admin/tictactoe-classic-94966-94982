@@ -3,6 +3,8 @@
   flex-direction: column;
   align-items: center;
   margin-top: 24px;
+  width: 100%;
+  max-width: 450px;
 }
 
 .game-status {
@@ -12,14 +14,71 @@
   text-align: center;
   height: 36px;
   min-height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-x {
+  color: #4cc9f0;
+}
+
+.status-o {
+  color: var(--kavia-orange);
+}
+
+.status-win {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 16px;
+  flex-wrap: wrap;
 }
 
 .btn-restart {
-  margin-top: 16px;
   padding: 10px 24px;
   background-color: var(--kavia-orange);
 }
 
 .btn-restart:hover {
   background-color: #FF8B4D;
+}
+
+.btn-secondary {
+  padding: 10px 24px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.game-mode-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.player-icon {
+  font-size: 1rem;
+}
+
+.current-player {
+  display: inline-block;
+  margin: 0 5px;
 }
