@@ -17,16 +17,22 @@
 }
 
 /* Adjust size for different board dimensions */
-.board-size-4 .cell {
+.board-size-3 .cell {
   width: 90px;
   height: 90px;
-  font-size: 2rem;
+  font-size: 2.2rem;
+}
+
+.board-size-4 .cell {
+  width: 85px;
+  height: 85px;
+  font-size: 1.8rem;
 }
 
 .board-size-5 .cell {
-  width: 80px;
-  height: 80px;
-  font-size: 1.8rem;
+  width: 75px;
+  height: 75px;
+  font-size: 1.6rem;
 }
 
 .cell:hover:not(:disabled) {
