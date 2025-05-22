@@ -18,7 +18,7 @@ const TicTacToe = () => {
   // Game settings state
   const [settings, setSettings] = useState({
     boardSize: 3,
-    gameMode: 'human-vs-human',
+    gameMode: 'human-vs-ai',
     aiDifficulty: 'medium',
     playerMarker: 'X'
   });
@@ -28,7 +28,7 @@ const TicTacToe = () => {
   const [isXNext, setIsXNext] = useState(true);
   const [gameHistory, setGameHistory] = useState([]);
   const [moveHistory, setMoveHistory] = useState([]);
-  const [showSettings, setShowSettings] = useState(false);
+  const [showSettings, setShowSettings] = useState(true);
   const [showAnalytics, setShowAnalytics] = useState(false);
   const [showHeatmap, setShowHeatmap] = useState(false);
   
