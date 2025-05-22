@@ -46,7 +46,8 @@ const TicTacToe = () => {
   
   // Get game result (winner or draw)
   const winnerInfo = calculateWinner(board, boardSize);
-  const isDraw = !winnerInfo && isBoardFull(board);
+  const winner = calculateWinner(board, boardSize);
+  const isDraw = !winner && isBoardFull(board);
   const isGameOver = !!winnerInfo || isDraw;
   
   // Calculate win statistics
@@ -227,7 +228,7 @@ const TicTacToe = () => {
           squares={board} 
           onClick={handleClick} 
           size={boardSize} 
-          winningLine={winnerInfo?.line || []} 
+          winningLine={(winnerInfo && winnerInfo.line) || []} 
           heatmap={showHeatmap ? gameStats.moveHistory.reduce((map, move) => {
             map[move.position] = (map[move.position] || 0) + 1;
             return map;
