@@ -189,7 +189,7 @@ const TicTacToe = () => {
         clearTimeout(aiTimeoutRef.current);
       }
     };
-  }, [board, isXNext, isAiTurn, isGameOver, aiDifficulty, aiMarker, boardSize]);
+  }, [board, isXNext, isAiTurn, isGameOver, aiDifficulty, aiMarker, boardSize, setMoveHistory, setBoard, setIsXNext]);
   
   // Determine current game status text
   let status;
