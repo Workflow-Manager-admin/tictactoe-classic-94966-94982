@@ -65,7 +65,10 @@ const TicTacToe = () => {
   const handleApplySettings = useCallback((newSettings) => {
     setSettings(newSettings);
     setBoard(createEmptyBoard(newSettings.boardSize));
-    setIsXNext(true);
+    
+    // If player selected 'O' in AI mode, AI should go first (as X)
+    const shouldAIGoFirst = newSettings.gameMode === 'human-vs-ai' && newSettings.playerMarker === 'O';
+    setIsXNext(true); // Always start with X
     setShowSettings(false);
   }, []);
   
