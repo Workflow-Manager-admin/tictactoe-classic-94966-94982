@@ -13,6 +13,20 @@
   transition: all 0.2s;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Adjust size for different board dimensions */
+.board-size-4 .cell {
+  width: 90px;
+  height: 90px;
+  font-size: 2rem;
+}
+
+.board-size-5 .cell {
+  width: 80px;
+  height: 80px;
+  font-size: 1.8rem;
 }
 
 .cell:hover:not(:disabled) {
@@ -30,4 +44,42 @@
 
 .cell-o {
   color: var(--kavia-orange); /* Orange for O */
+}
+
+.cell-winning {
+  border-color: var(--kavia-orange);
+  box-shadow: 0 0 8px var(--kavia-orange);
+}
+
+/* Heatmap styles */
+.cell::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: -1;
+}
+
+.heat-intensity-1::after {
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.heat-intensity-2::after {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+
+.heat-intensity-3::after {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.heat-intensity-4::after {
+  background-color: rgba(255, 0, 0, 0.4);
+}
+
+.heat-intensity-5::after {
+  background-color: rgba(255, 0, 0, 0.5);
 }
