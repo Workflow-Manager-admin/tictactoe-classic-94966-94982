@@ -64,6 +64,16 @@
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.settings-btn {
+  position: relative;
+  background-color: rgba(232, 122, 65, 0.15);
+  border: 1px solid var(--kavia-orange);
+}
+
+.settings-btn:hover {
+  background-color: rgba(232, 122, 65, 0.25);
+}
+
 .game-mode-indicator {
   display: flex;
   align-items: center;
