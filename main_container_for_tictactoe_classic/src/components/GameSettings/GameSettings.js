@@ -50,23 +50,25 @@ const GameSettings = ({ onApplySettings, currentSettings, showApplyButton = true
         </div>
       </div>
       
-      <div className="setting-group">
+      <div className="setting-group mode-group">
         <div className="setting-label">Game Mode</div>
-        <div className="setting-options">
+        <div className="setting-options mode-options">
           <button
-            className={`option-button ${settings.gameMode === 'human-vs-human' ? 'active' : ''}`}
-            onClick={() => handleSettingChange('gameMode', 'human-vs-human')}
-          >
-            <div className="player-option">
-              <span className="player-icon">👤</span> vs <span className="player-icon">👤</span>
-            </div>
-          </button>
-          <button
-            className={`option-button ${settings.gameMode === 'human-vs-ai' ? 'active' : ''}`}
+            className={`option-button mode-button ${settings.gameMode === 'human-vs-ai' ? 'active' : ''}`}
             onClick={() => handleSettingChange('gameMode', 'human-vs-ai')}
           >
             <div className="player-option">
               <span className="player-icon">👤</span> vs <span className="player-icon">🤖</span>
+              <span className="mode-label">Play vs AI</span>
+            </div>
+          </button>
+          <button
+            className={`option-button mode-button ${settings.gameMode === 'human-vs-human' ? 'active' : ''}`}
+            onClick={() => handleSettingChange('gameMode', 'human-vs-human')}
+          >
+            <div className="player-option">
+              <span className="player-icon">👤</span> vs <span className="player-icon">👤</span>
+              <span className="mode-label">Two Players</span>
             </div>
           </button>
         </div>
