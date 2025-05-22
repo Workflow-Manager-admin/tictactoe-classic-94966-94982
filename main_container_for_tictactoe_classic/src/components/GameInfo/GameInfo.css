@@ -1,0 +1,25 @@
+.game-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.game-status {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 16px;
+  text-align: center;
+  height: 36px;
+  min-height: 36px;
+}
+
+.btn-restart {
+  margin-top: 16px;
+  padding: 10px 24px;
+  background-color: var(--kavia-orange);
+}
+
+.btn-restart:hover {
+  background-color: #FF8B4D;
+}
