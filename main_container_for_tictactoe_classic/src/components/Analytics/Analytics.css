@@ -1,0 +1,106 @@
+.analytics {
+  margin-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 450px;
+  margin: 1.5rem auto;
+}
+
+.analytics-title {
+  font-size: 1.2rem;
+  color: var(--kavia-orange);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-box {
+  background-color: var(--kavia-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 0.75rem;
+  text-align: center;
+  flex: 1 1 90px;
+  min-width: 90px;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat-x {
+  color: #4cc9f0; /* Light blue for X */
+}
+
+.stat-o {
+  color: var(--kavia-orange); /* Orange for O */
+}
+
+.stat-draw {
+  color: #cccccc;
+}
+
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chart-section {
+  margin-top: 1rem;
+}
+
+.chart-title {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.board-heatmap {
+  margin: 0 auto;
+}
+
+/* Toggle button for analytics */
+.toggle-analytics {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.toggle-analytics:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .charts-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .chart-section {
+    flex: 1 1 45%;
+  }
+}
