@@ -55,8 +55,8 @@ const GameInfo = ({
         <button className="btn btn-restart" onClick={onRestart}>
           Restart Game
         </button>
-        <button className="btn btn-secondary" onClick={onToggleSettings}>
-          Settings
+        <button className="btn btn-secondary settings-btn" onClick={onToggleSettings}>
+          Game Settings
         </button>
         <button className="btn btn-secondary" onClick={onToggleAnalytics}>
           Analytics
