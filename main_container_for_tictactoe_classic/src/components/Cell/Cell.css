@@ -1,0 +1,33 @@
+.cell {
+  background-color: var(--kavia-dark);
+  border: 2px solid var(--border-color);
+  color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cell:hover:not(:disabled) {
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translateY(-2px);
+}
+
+.cell:disabled {
+  cursor: default;
+}
+
+.cell-x {
+  color: #4cc9f0; /* Light blue for X */
+}
+
+.cell-o {
+  color: var(--kavia-orange); /* Orange for O */
+}
