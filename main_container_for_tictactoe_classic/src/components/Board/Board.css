@@ -1,13 +1,43 @@
 .board {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 8px;
-  width: 320px;
-  height: 320px;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.05);
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Default 3x3 board */
+.board-size-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 320px;
+  height: 320px;
+}
+
+/* 4x4 board */
+.board-size-4 {
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  width: 400px;
+  height: 400px;
+}
+
+/* 5x5 board */
+.board-size-5 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 450px;
+  height: 450px;
+}
+
+.winning-cell {
+  animation: pulse-win 1.5s infinite;
+}
+
+@keyframes pulse-win {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); box-shadow: 0 0 10px var(--kavia-orange); }
+  100% { transform: scale(1); }
 }
