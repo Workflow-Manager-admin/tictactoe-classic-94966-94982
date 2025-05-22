@@ -55,14 +55,46 @@
   border-color: var(--kavia-orange);
 }
 
+.mode-group {
+  margin-bottom: 20px;
+}
+
+.mode-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mode-button {
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
 .player-option {
   display: flex;
   align-items: center;
   gap: 8px;
+  justify-content: center;
+  position: relative;
 }
 
 .player-icon {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.mode-label {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+.mode-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mode-button.active {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .apply-button {
