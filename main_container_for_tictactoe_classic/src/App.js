@@ -21,8 +21,8 @@ function App() {
             <div className="subtitle">Classic Game</div>
             <h1 className="title">Tic Tac Toe</h1>
             <div className="description">
-              A classic two-player strategy game where players take turns marking X or O on a 3x3 grid,
-              aiming to get three of their marks in a row, column, or diagonal.
+              An enhanced version of the classic strategy game with customizable board sizes (3x3, 4x4, 5x5),
+              AI opponent with multiple difficulty levels, local multiplayer, and visual analytics to track your performance.
             </div>
             <TicTacToe />
           </div>
